@@ -5,20 +5,20 @@ from flask import request
 from flask import json
 from bson import json_util
 from . import api
-from api_functions.getVsimCardCountryInfo import (getVsimCountryStatic, getindexHtmlMutiLineData)
+from .api_functions.getVsimCardCountryInfo import (getVsimCountryStatic, getindexHtmlMutiLineData)
 # 导入查询手工维护表、系统资源统计表模块
-from api_functions.getonSysSrc import (getVsimManulInfor,
+from .api_functions.getonSysSrc import (getVsimManulInfor,
                                        quryonSysSrc)
 # 获取gsvchome国家维度卡资源统计栏
-from api_functions.getCountrySrcConIndexGrid import qurycountrySrcCon
+from .api_functions.getCountrySrcConIndexGrid import qurycountrySrcCon
 # 获取问题初诊的信息函数
-from api_functions.getCountryProbDic import getProbFisrtDic
+from .api_functions.getCountryProbDic import getProbFisrtDic
 # Python get Flower Model
-from api_functions.get_FlowerQueryFunction import getFlowers
+from .api_functions.get_FlowerQueryFunction import getFlowers
 # new vsim test model
-from api_functions.newVsimTest import get_new_vsim_test_info
+from .api_functions.newVsimTest import get_new_vsim_test_info
 # org ajax model
-from api_functions.selectAjax.getSelectData import get_org
+from .api_functions.selectAjax.getSelectData import get_org
 
 
 # ("以下为资源页面API接口-------------------------------------------------------------------------------------------------")

@@ -5,7 +5,7 @@ import json
 import decimal
 from bson import json_util
 import mysql.connector
-from SqlPack.SQLModel import qureResultAsJson
+from .SqlPack.SQLModel import qureResultAsJson
 
 S_sysStr = 'config_S'
 S_Database = 'ucloudplatform'
@@ -247,7 +247,6 @@ def getMutiLineMaxUser(country, begintime, endtime, butype_set, timedim_set):
         "   " + butype_set +
         "GROUP BY a.`country`, a.`createtime` ) AS b "
         "GROUP BY b.country ,DATE_FORMAT(b.sampletime, " + timedim_set + ")")
-    print (query_str_MaxUser)
     jsonResults_MaxUser = getJosonData(sysStr=amzami_sysStr, Database=amzami_Database, query_str=query_str_MaxUser)
 
     return jsonResults_MaxUser

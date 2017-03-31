@@ -4,19 +4,19 @@
 import json
 from bson import json_util
 from bson.code import Code
-from SqlPack.SQLModel import qureResultAsJson
+from .SqlPack.SQLModel import qureResultAsJson
 import time
 import pymongo
 import datetime
 # 获取连接信息
-from SqlPack.pyMongoModel import (sql_info,
+from .SqlPack.pyMongoModel import (sql_info,
                                   MongoClient,
                                   Database,
                                   Sheet)
 # Mongo_Model
-from SqlPack.Mongo_Model import (msmongo,
+from .SqlPack.Mongo_Model import (msmongo,
                                  pygroup)
-from SqlPack.SqlLinkInfo import getCountryProbDic
+from .SqlPack.SqlLinkInfo import getCountryProbDic
 # 获取新架构卡资源数据库连接信息
 Sql = getCountryProbDic['getSrc']
 

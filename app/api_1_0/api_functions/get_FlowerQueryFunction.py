@@ -3,12 +3,12 @@
 
 import json
 from bson import json_util
-from SqlPack.SQLModel import qureResultAsJson
+from .SqlPack.SQLModel import qureResultAsJson
 import time
 import pymongo
 import datetime
 # 获取连接信息
-from SqlPack.SqlLinkInfo import getFlowerQueryFunction as Sql
+from .SqlPack.SqlLinkInfo import getFlowerQueryFunction as Sql
 # 获取新架构卡资源数据库连接信息
 sql_info = Sql
 

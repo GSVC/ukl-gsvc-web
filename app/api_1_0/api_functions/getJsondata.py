@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from SqlPack.SQLModel import qureResultAsJson
+from .SqlPack.SQLModel import qureResultAsJson
 
 
 

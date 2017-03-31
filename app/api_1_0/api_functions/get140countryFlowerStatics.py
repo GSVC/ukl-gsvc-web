@@ -4,12 +4,12 @@
 import json
 from bson import json_util
 import mysql.connector
-from SqlPack.SQLModel import qureResultAsJson
+from .SqlPack.SQLModel import qureResultAsJson
 import time
 import datetime
 import pymongo
 # from SqlPack.pyMongoModel import (sql_info)
-from SqlPack.SqlLinkInfo import get140countryFlowerStatics as SqlInfo
+from .SqlPack.SqlLinkInfo import get140countryFlowerStatics as SqlInfo
 
 sql_info = SqlInfo
 

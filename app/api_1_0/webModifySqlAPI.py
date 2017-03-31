@@ -15,7 +15,7 @@ from flask import json
 from flask import request
 from bson import json_util
 # DataApiFunc 为数据库更新、插入、删除数据等操作函数
-from api_functions.DataApiFunc import (deleManuleVsimSrc,
+from .api_functions.DataApiFunc import (deleManuleVsimSrc,
                                        insertManuleVsimSrc,
                                        updateManuleVsimSrc,
                                        deleteNewVsimTestInfo,

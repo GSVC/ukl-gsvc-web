@@ -2,9 +2,9 @@
 
 import json
 from bson import json_util
-from SqlPack.SQLModel import qureResultAsJson
+from .SqlPack.SQLModel import qureResultAsJson
 import mysql.connector
-from SqlPack.SqlLinkInfo import getonSysSrc as Sql
+from .SqlPack.SqlLinkInfo import getonSysSrc as Sql
 
 sql_info = Sql
 

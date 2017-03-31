@@ -11,7 +11,7 @@ from flask_pagedown import PageDown
 from flask_cache import Cache
 # css,js打包器
 from flask_assets import Environment
-from assetsBundle import (
+from .assetsBundle import (
     login_css,
     main_css,
     main_js,

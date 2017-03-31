@@ -5,8 +5,8 @@
 import json
 from bson import json_util
 import mysql.connector
-from SqlPack.SQLModel import qureResultAsJson
-from SqlPack.SqlLinkInfo import DataApiFuncSqlLink as Sql
+from .SqlPack.SQLModel import qureResultAsJson
+from .SqlPack.SqlLinkInfo import DataApiFuncSqlLink as Sql
 
 Sql_Info = Sql['NewVsimTestInfo']['query']
 

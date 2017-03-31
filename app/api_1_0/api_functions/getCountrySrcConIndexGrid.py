@@ -2,7 +2,7 @@
 
 import json
 from bson import json_util
-from SqlPack.SQLModel import qureResultAsJson
+from .SqlPack.SQLModel import qureResultAsJson
 import decimal
 import mysql.connector
 

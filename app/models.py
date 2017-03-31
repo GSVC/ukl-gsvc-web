@@ -2,6 +2,7 @@
 
 
 import hashlib
+import codecs
 from datetime import datetime
 
 import bleach
@@ -152,7 +153,8 @@ class User(UserMixin, db.Model):
         return False
 
     def get_id(self):
-        return unicode(self.id)
+        return str(self.id).encode(encoding='utf-8')
+        #return unicode(self.id)
 
     def change_email(self, token):
         s = Serializer(current_app.config['SECRET_KEY'])
